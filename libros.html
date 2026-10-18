@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros | Jardín de Lectura</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/Logo-JdL.png" alt="Jardín de Lectura">
+        </a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="libros.html">Libros</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="usuario.html" id="enlace-usuario">Mi cuenta</a>
+            <a href="carrito.html">🛒 Carrito</a>
+        </nav>
+    </header>
+    <main>
+        <section class="catalogo">
+            <h2>Catálogo de libros</h2>
+            <p>
+                Explorá nuestra selección de libros.
+            </p>
+            <div class="zona-filtros">
+                <div class="texto-filtros">
+                    <h3>Encontrá tu próxima lectura</h3>
+                    <p>
+                        Explorá nuestra colección y descubrí una historia para vos.
+                    </p>
+                </div>
+                <div class="filtros">
+                    <div class="buscador">
+                        <span>🔍</span>
+                        <input
+                            type="text"
+                            id="buscador-libros"
+                            placeholder="Buscar por título o autor..."
+                        >
+                    </div>
+                    <select id="filtro-categoria">
+                        <option value="todas">
+                            Todas las categorías
+                        </option>
+                        <option value="Fantasía">
+                            Fantasía
+                        </option>
+                        <option value="Gótico">
+                            Gótico
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div
+                id="contenedor-libros"
+                class="contenedor-libros">
+            </div>
+        </section>    
+    </main>
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-marca">
+                <h3>Jardín de Lectura</h3>
+                <p>
+                    Un espacio para descubrir historias, compartir experiencias y explorar nuevos mundos.
+                </p>
+            </div>
+            <div class="footer-enlaces">
+                <h4>Explorá</h4>
+                <a href="index.html">Inicio</a>
+                <a href="libros.html">Libros</a>
+                <a href="productos.html">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-redes">
+                <h4>Seguinos</h4>
+                <div class="redes-sociales">
+                    <a href="#" target="_blank" aria-label="Instagram">
+                        Instagram
+                    </a>
+                    <a href="#" target="_blank" aria-label="TikTok">
+                        TikTok
+                    </a>
+                    <a href="#" target="_blank" aria-label="Facebook">
+                        Facebook
+                    </a>
+                </div>
+                <p>
+                    Compartí tu pasión por los libros.
+                </p>
+            </div>
+        </div>
+        <div class="footer-inferior">
+            <p>© 2026 Jardín de Lectura</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/general.js"></script>
+    <script src="js/biblioteca.js"></script>
+    <script src="js/libros.js"></script>
+    <script src="js/estante.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/comprar.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardín de Lectura</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+         <a href="index.html" class="logo">
+            <img src="img/Logo-JdL.png" alt="Jardín de Lectura">
+        </a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="libros.html">Libros</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="usuario.html" id="enlace-usuario">Mi cuenta</a>
+            <a href="carrito.html">🛒 Carrito</a>
+        </nav>
+    </header>
+    <main>
+        <section class="presentacion">
+            <div class="titulo-presentacion">
+                <h2><span>Bienvenidos a</span> <strong>Jardín de Lectura</strong></h2>
+            </div>
+            <div class="descripcion-presentacion">
+                <p>
+                    El espacio ideal para descubrir historias,experiencias y productos para exploradores de mundos.
+                </p>
+            </div>
+            <a href="libros.html" class="boton">Ver libros</a>
+            <div class="hojas-presentacion" aria-hidden="true">
+                <span><svg viewBox="0 0 32 32"><path d="M27.8 3.2C16.5 3.8 6.1 7.2 4.2 16.1c-1.2 5.7 3.4 10.4 8.8 8.8C21.9 22.9 25.7 12 27.8 3.2Z"/><path class="nervadura-hoja" d="M5 27C11.5 19.9 17.7 12.8 26 5"/></svg></span>
+                <span><svg viewBox="0 0 32 32"><path d="M27.8 3.2C16.5 3.8 6.1 7.2 4.2 16.1c-1.2 5.7 3.4 10.4 8.8 8.8C21.9 22.9 25.7 12 27.8 3.2Z"/><path class="nervadura-hoja" d="M5 27C11.5 19.9 17.7 12.8 26 5"/></svg></span>
+                <span><svg viewBox="0 0 32 32"><path d="M27.8 3.2C16.5 3.8 6.1 7.2 4.2 16.1c-1.2 5.7 3.4 10.4 8.8 8.8C21.9 22.9 25.7 12 27.8 3.2Z"/><path class="nervadura-hoja" d="M5 27C11.5 19.9 17.7 12.8 26 5"/></svg></span>
+                <span><svg viewBox="0 0 32 32"><path d="M27.8 3.2C16.5 3.8 6.1 7.2 4.2 16.1c-1.2 5.7 3.4 10.4 8.8 8.8C21.9 22.9 25.7 12 27.8 3.2Z"/><path class="nervadura-hoja" d="M5 27C11.5 19.9 17.7 12.8 26 5"/></svg></span>
+                <span><svg viewBox="0 0 32 32"><path d="M27.8 3.2C16.5 3.8 6.1 7.2 4.2 16.1c-1.2 5.7 3.4 10.4 8.8 8.8C21.9 22.9 25.7 12 27.8 3.2Z"/><path class="nervadura-hoja" d="M5 27C11.5 19.9 17.7 12.8 26 5"/></svg></span>
+                <span><svg viewBox="0 0 32 32"><path d="M27.8 3.2C16.5 3.8 6.1 7.2 4.2 16.1c-1.2 5.7 3.4 10.4 8.8 8.8C21.9 22.9 25.7 12 27.8 3.2Z"/><path class="nervadura-hoja" d="M5 27C11.5 19.9 17.7 12.8 26 5"/></svg></span>
+                <span><svg viewBox="0 0 32 32"><path d="M27.8 3.2C16.5 3.8 6.1 7.2 4.2 16.1c-1.2 5.7 3.4 10.4 8.8 8.8C21.9 22.9 25.7 12 27.8 3.2Z"/><path class="nervadura-hoja" d="M5 27C11.5 19.9 17.7 12.8 26 5"/></svg></span>
+                <span><svg viewBox="0 0 32 32"><path d="M27.8 3.2C16.5 3.8 6.1 7.2 4.2 16.1c-1.2 5.7 3.4 10.4 8.8 8.8C21.9 22.9 25.7 12 27.8 3.2Z"/><path class="nervadura-hoja" d="M5 27C11.5 19.9 17.7 12.8 26 5"/></svg></span>
+            </div>
+        </section>
+        <section class="destacados">
+            <h2>Últimos Ingresos en Libros</h2>
+            <div
+                id="ultimos-libros"
+                class="contenedor-libros">
+            </div>
+        </section>
+        <section class="destacados">
+            <h2>Últimos productos agregados</h2>
+            <div
+                id="ultimos-productos"
+                class="contenedor-libros">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-marca">
+                <h3>Jardín de Lectura</h3>
+                <p>
+                    Un espacio para descubrir historias, compartir experiencias y explorar nuevos mundos.
+                </p>
+            </div>
+            <div class="footer-enlaces">
+                <h4>Explorá</h4>
+                <a href="index.html">Inicio</a>
+                <a href="libros.html">Libros</a>
+                <a href="productos.html">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-redes">
+                <h4>Seguinos</h4>
+                <div class="redes-sociales">
+                    <a href="#" target="_blank" aria-label="Instagram">
+                        Instagram
+                    </a>
+                    <a href="#" target="_blank" aria-label="TikTok">
+                        TikTok
+                    </a>
+                    <a href="#" target="_blank" aria-label="Facebook">
+                        Facebook
+                    </a>
+                </div>
+                <p>
+                    Compartí tu pasión por los libros.
+                </p>
+            </div>
+        </div>
+        <div class="footer-inferior">
+            <p>© 2026 Jardín de Lectura</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/general.js"></script>
+    <script src="js/biblioteca.js"></script>
+    <script src="js/estante.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/inicio.js"></script>
+</body>
+</html>

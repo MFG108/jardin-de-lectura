@@ -1,0 +1,149 @@
+.catalogo {
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 0 30px;
+}
+.catalogo h2 {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #4a3428;
+    margin-bottom: 10px;
+}
+.catalogo > p {
+    text-align: center;
+    color: #756b63;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+/*Filtros*/
+.zona-filtros {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    padding: 35px;
+    background-color: #e8ded3;
+    border-radius: 12px;
+}
+.texto-filtros {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.texto-filtros h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: #4a3428;
+    margin-bottom: 5px;
+}
+.texto-filtros p {
+    color: #756b63;
+    font-size: 14px;
+}
+.filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.buscador {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 400px;
+    padding: 0 15px;
+    background-color: #ffffff;
+    border: 1px solid #d5ccc3;
+    border-radius: 6px;
+}
+.buscador span {
+    font-size: 15px;
+}
+.buscador input {
+    width: 100%;
+    padding: 13px 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #403a36;
+}
+.buscador input::placeholder {
+    color: #9a918a;
+}
+.filtros select {
+    padding: 13px 15px;
+    border: 1px solid #d5ccc3;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #403a36;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+.filtros select:focus {
+    border-color: #6b4f3f;
+}
+/*Info Libros*/
+.contenedor-libros {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.libro {
+    background-color: #ffffff;
+    width: 260px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(74, 52, 40, 0.08);
+
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+.libro:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(74, 52, 40, 0.14);
+}
+/*Catálogo*/
+.contenedor-libros .portada {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+.libro h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #4a3428;
+    margin-bottom: 8px;
+}
+.libro p {
+    color: #756b63;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.libro .precio {
+    font-size: 18px;
+    font-weight: 600;
+    color: #6b4f3f;
+    margin: 15px 0;
+}
+/*Botones*/
+.libro .boton,
+.libro button {
+    margin: 5px 3px 0;
+}
+.libro button {
+    font-size: 13px;
+    padding: 10px 14px;
+}

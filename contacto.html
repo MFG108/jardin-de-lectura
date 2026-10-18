@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Jardín de Lectura</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/formularios.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/Logo-JdL.png" alt="Jardín de Lectura">
+        </a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="libros.html">Libros</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="usuario.html" id="enlace-usuario">
+                Mi cuenta
+            </a>
+            <a href="carrito.html">🛒 Carrito</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contacto">
+            <div class="contacto-titulo">
+                <h2>Contacto</h2>
+                <p>
+                ¿Tenés alguna consulta? Escribinos y nos pondremos en contacto.
+                </p>
+            </div>
+            <form id="formulario-contacto">
+                <div>
+                    <label for="nombre-contacto">
+                        Nombre
+                    </label>
+                    <input
+                        type="text"
+                        id="nombre-contacto"
+                        required
+                    >
+                </div>
+                <div>
+                    <label for="email-contacto">
+                        Correo electrónico
+                    </label>
+                    <input
+                        type="email"
+                        id="email-contacto"
+                        required
+                    >
+                </div>
+                <div>
+                    <label for="asunto-contacto">
+                        Asunto
+                    </label>
+                    <input
+                        type="text"
+                        id="asunto-contacto"
+                        required
+                    >
+                </div>
+                <div>
+                    <label for="mensaje-contacto">
+                        Mensaje
+                    </label>
+                    <textarea
+                        id="mensaje-contacto"
+                        rows="6"
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit">
+                    Enviar mensaje
+                </button>
+            </form>
+            <div id="mensaje-enviado">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-marca">
+                <h3>Jardín de Lectura</h3>
+                <p>
+                    Un espacio para descubrir historias, compartir experiencias y explorar nuevos mundos.
+                </p>
+            </div>
+            <div class="footer-enlaces">
+                <h4>Explorá</h4>
+                <a href="index.html">Inicio</a>
+                <a href="libros.html">Libros</a>
+                <a href="productos.html">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-redes">
+                <h4>Seguinos</h4>
+                <div class="redes-sociales">
+                    <a href="#" target="_blank" aria-label="Instagram">
+                        Instagram
+                    </a>
+                    <a href="#" target="_blank" aria-label="TikTok">
+                        TikTok
+                    </a>
+                    <a href="#" target="_blank" aria-label="Facebook">
+                        Facebook
+                    </a>
+                </div>
+                <p>
+                    Compartí tu pasión por los libros.
+                </p>
+            </div>
+        </div>
+        <div class="footer-inferior">
+            <p>© 2026 Jardín de Lectura</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/general.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+</html>

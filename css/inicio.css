@@ -1,0 +1,205 @@
+.presentacion {
+    position: relative;
+    text-align: center;
+    padding: 120px 20px;
+    background-color: #e8ded3;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.titulo-presentacion,
+.descripcion-presentacion,
+.presentacion .boton {
+    position: relative;
+    z-index: 1;
+}
+.hojas-presentacion {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+.hojas-presentacion span {
+    position: absolute;
+    top: -50px;
+    left: var(--hoja-x);
+    width: var(--hoja-tamano);
+    height: var(--hoja-tamano);
+    opacity: 0;
+    animation: caida-hoja var(--hoja-duracion) linear var(--hoja-espera) infinite;
+}
+.hojas-presentacion svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: #6b4f3f;
+}
+.hojas-presentacion .nervadura-hoja {
+    fill: none;
+    stroke: #e8ded3;
+    stroke-linecap: round;
+    stroke-width: 1.2;
+}
+.hojas-presentacion span:nth-child(1) {
+    --hoja-x: 12%;
+    --hoja-tamano: 24px;
+    --hoja-duracion: 7s;
+    --hoja-espera: 0s;
+}
+.hojas-presentacion span:nth-child(2) {
+    --hoja-x: 25%;
+    --hoja-tamano: 19px;
+    --hoja-duracion: 8s;
+    --hoja-espera: 2.5s;
+}
+.hojas-presentacion span:nth-child(3) {
+    --hoja-x: 38%;
+    --hoja-tamano: 22px;
+    --hoja-duracion: 6.5s;
+    --hoja-espera: 1.2s;
+}
+.hojas-presentacion span:nth-child(4) {
+    --hoja-x: 52%;
+    --hoja-tamano: 20px;
+    --hoja-duracion: 8.5s;
+    --hoja-espera: 4s;
+}
+.hojas-presentacion span:nth-child(5) {
+    --hoja-x: 66%;
+    --hoja-tamano: 25px;
+    --hoja-duracion: 7.5s;
+    --hoja-espera: 0.8s;
+}
+.hojas-presentacion span:nth-child(6) {
+    --hoja-x: 78%;
+    --hoja-tamano: 18px;
+    --hoja-duracion: 6s;
+    --hoja-espera: 3s;
+}
+.hojas-presentacion span:nth-child(7) {
+    --hoja-x: 88%;
+    --hoja-tamano: 22px;
+    --hoja-duracion: 9s;
+    --hoja-espera: 1.8s;
+}
+.hojas-presentacion span:nth-child(8) {
+    --hoja-x: 45%;
+    --hoja-tamano: 17px;
+    --hoja-duracion: 7s;
+    --hoja-espera: 5s;
+}
+@keyframes caida-hoja {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0) rotate(0deg);
+    }
+    10% {
+        opacity: 0.75;
+    }
+    50% {
+        transform: translate3d(35px, 280px, 0) rotate(180deg);
+    }
+    90% {
+        opacity: 0.65;
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(-25px, 620px, 0) rotate(360deg);
+    }
+}
+.titulo-presentacion h2 {
+    max-width: 900px;
+    margin-bottom: 20px;
+    color: #4a3428;
+    line-height: 1.1;
+}
+.titulo-presentacion h2 span {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 500;
+}
+.titulo-presentacion h2 strong {
+    display: block;
+    font-family: "Dancing Script", cursive;
+    font-size: 72px;
+    font-weight: 600;
+}
+.descripcion-presentacion p {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #5f554e;
+}
+.presentacion .boton {
+    padding: 14px 28px;
+    font-size: 14px;
+}
+@media (prefers-reduced-motion: reduce) {
+    .hojas-presentacion span {
+        display: none;
+        animation: none;
+    }
+}
+/*Destacados*/
+.destacados {
+    padding: 75px 50px;
+}
+.destacados h2 {
+    text-align: center;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 38px;
+    font-weight: 600;
+
+    color: #4a3428;
+    margin-bottom: 40px;
+}
+.destacados .libro {
+    width: 280px;
+    padding: 20px;
+}
+.destacados .libro h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: #4a3428;
+    margin-bottom: 8px;
+}
+.destacados .libro p {
+    font-family: "Montserrat", sans-serif;
+    color: #5f554e;
+    font-size: 14px;
+}
+.portada.portada-inicio {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+.destacados .libro:hover .portada-inicio {
+    transform: scale(1.03);
+}
+/*Arco*/
+.presentacion::before {
+    content: "";
+    position: absolute;
+    width: 750px;
+    height: 430px;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #6b4f3f;
+    border-bottom: none;
+    border-radius: 50% 50% 0 0;
+    pointer-events: none;
+}

@@ -1,0 +1,59 @@
+.detalle-libro {
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(74, 52, 40, 0.09);
+}
+.portada-detalle {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(74, 52, 40, 0.16);
+}
+.informacion-libro {
+    flex: 1;
+}
+.informacion-libro h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #4a3428;
+    margin-bottom: 10px;
+}
+.informacion-libro h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6b4f3f;
+    margin-bottom: 25px;
+}
+.informacion-libro p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #756b63;
+    margin-bottom: 12px;
+}
+.descripcion-detalle {
+    max-width: 550px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+.informacion-libro .precio {
+    font-family: "Montserrat", sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: #6b4f3f;
+    margin: 30px 0;
+}
+.informacion-libro button {
+    padding: 13px 24px;
+    font-size: 14px;
+}

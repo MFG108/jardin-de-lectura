@@ -1,0 +1,190 @@
+.contacto,
+.usuario {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+/*Títulos*/
+.contacto h2,
+.usuario h2 {
+    text-align: center;
+    color: #4f392e;
+    margin-bottom: 15px;
+}
+.contacto-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contacto-titulo h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #4f392e;
+    margin-bottom: 10px;
+}
+.contacto-titulo p {
+    color: #5f554e;
+}
+/*Formularios*/
+.contacto form,
+.usuario form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contacto form div,
+.usuario form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.contacto input,
+.contacto textarea,
+.usuario input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+.contacto textarea {
+    resize: vertical;
+}
+.contacto input:focus,
+.contacto textarea:focus,
+.usuario input:focus {
+    outline: none;
+    border-color: #6b4f3f;
+}
+.mensaje-contacto {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #e8ded3;
+    border-radius: 8px;
+    text-align: center;
+}
+/*Usuario*/
+.usuario-titulo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.usuario-titulo h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #4f392e;
+    margin-bottom: 10px;
+}
+.usuario-titulo p {
+    color: #5f554e;
+}
+.usuario h3 {
+    font-family: Georgia, serif;
+    color: #4f392e;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+#formulario-registro button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+    font-size: 16px;
+}
+#mensaje-registro {
+    text-align: center;
+    margin-top: 15px;
+    color: #6b4f3f;
+}
+/*Sesion*/
+#sesion {
+    text-align: center;
+}
+#datos-usuario {
+    margin: 20px 0 25px;
+    padding: 20px;
+    background-color: #eee6de;
+    border-radius: 10px;
+    color: #5f554e;
+}
+#cerrar-sesion {
+    padding: 13px 25px;
+}
+/*Compra*/
+.compra {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.compra-titulo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.compra-titulo h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #4f392e;
+    margin-bottom: 10px;
+}
+.compra-titulo p {
+    color: #5f554e;
+}
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 7px;
+    color: #4f392e;
+    font-weight: bold;
+}
+.grupo-formulario input,
+.grupo-formulario select {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d5ccc3;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #faf8f5;
+    outline: none;
+}
+.grupo-formulario input:focus,
+.grupo-formulario select:focus {
+    border-color: #6b4f3f;
+    background-color: white;
+}
+.compra button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+    font-size: 16px;
+}
+.compra-realizada {
+    margin-top: 20px;
+    padding: 30px;
+    text-align: center;
+    background-color: #eee6de;
+    border-radius: 12px;
+}
+.compra-realizada h2 {
+    font-family: Georgia, serif;
+    color: #4f392e;
+    margin-bottom: 15px;
+}
+.compra-realizada p {
+    color: #5f554e;
+    margin-bottom: 10px;
+}
+.compra-realizada h3 {
+    color: #6b4f3f;
+    font-size: 24px;
+    margin: 20px 0;
+}
+.compra-realizada .boton {
+    margin-top: 15px;
+}
